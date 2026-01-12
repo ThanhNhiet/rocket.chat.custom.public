@@ -7081,5 +7081,21 @@
   "timestamps.longDateDescription": "12/31/2020, 12:00 AM",
   "timestamps.fullDateTimeDescription": "December 31, 2020 12:00 AM",
   "timestamps.fullDateTimeLongDescription": "Thursday, December 31, 2020 12:00:00 AM",
-  "timestamps.relativeTimeDescription": "1 year ago"
+  "timestamps.relativeTimeDescription": "1 year ago",
+  "scrm_task_create_title": "Create Task",
+  "scrm_task_name_label": "Task Name",
+  "scrm_task_description_label": "Description",
+  "scrm_task_priority_label": "Priority",
+  "scrm_task_priority_low": "Low",
+  "scrm_task_priority_medium": "Medium",
+  "scrm_task_priority_High": "High",
+  "scrm_task_cancel_btn": "Cancel",
+  "scrm_task_create_btn": "Create",
+  "scrm_task_name_placeholder": "Enter task name...",
+  "scrm_task_description_placeholder": "Enter task description...",
+  "scrm_task_create_success": "Task created successfully",
+  "scrm_task_create_fail": "Failed to create task",
+  "scrm_task_err_notsignin": "You must sign in with a SuiteCRM account to use this feature",
+  "scrm_task_err_notallow": "You do not have permission to create tasks",
+  "scrm_task_err_connection": "Failed to establish connection to SuiteCRM"
 }

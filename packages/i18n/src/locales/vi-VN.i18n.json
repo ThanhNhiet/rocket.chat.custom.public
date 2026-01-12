@@ -7080,5 +7080,21 @@
     "view-import-operations_description": "Quyền xem hoạt động nhập khẩu",
     "view-livechat-analytics": "Xem phân tích đa kênh",
     "view-livechat-analytics_description": "Quyền xem phân tích trò chuyện trực tiếp",
-    "view-livechat-appearance": "Xem giao diện Bán hàng đa kênh"
+    "view-livechat-appearance": "Xem giao diện Bán hàng đa kênh",
+    "scrm_task_create_title": "Tạo công việc",
+    "scrm_task_name_label": "Tên công việc",
+    "scrm_task_description_label": "Mô tả",
+    "scrm_task_priority_label": "Độ ưu tiên",
+    "scrm_task_priority_low": "Thấp",
+    "scrm_task_priority_medium": "Trung bình",
+    "scrm_task_priority_High": "Cao",
+    "scrm_task_cancel_btn": "Hủy",
+    "scrm_task_create_btn": "Tạo",
+    "scrm_task_name_placeholder": "Nhập tên công việc...",
+    "scrm_task_description_placeholder": "Nhập mô tả công việc...",
+    "scrm_task_create_success": "Tạo công việc thành công",
+    "scrm_task_create_fail": "Tạo công việc thất bại",
+    "scrm_task_err_notsignin": "Bạn phải đăng nhập bằng tài khoản SuiteCRM để sử dụng tính năng này",
+    "scrm_task_err_notallow": "Bạn không có quyền tạo công việc",
+    "scrm_task_err_connection": "Thất bại trong việc thiết lập kết nối đến SuiteCRM"
 }
