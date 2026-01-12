@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export OVERWRITE_SETTING_Accounts_TwoFactorAuthentication_Enabled=false
+export OVERWRITE_SETTING_Accounts_TwoFactorAuthentication_Enforce_Password_Fallback=false
+cd ..
+yarn dsv
