@@ -34,7 +34,9 @@ Vị trí theme color: apps/meteor/app/theme/client
 
 NHỮNG FILE ĐƯỢC THÊM MỚI
 
-- apps/meteor/client/brandingConfig.ts
+- apps/meteor/client/brandingConfig.ts	//Chứa thông tin về công ty
+- apps/meteor/client/components/message/toolbar/items/actions/CreateTaskMessageAction.tsx	//Giao diện và logic tạo task
+- apps/meteor/app/api/server/v1/users.custom.ts	//Api custom liên quan đến services của user
 
 ==============================================================
 
@@ -43,7 +45,10 @@ NHỮNG FILE ĐƯỢC CHỈNH SỬA
 - apps/meteor/client/sidebar/footer/SidebarFooterWatermark.tsx
 - packages/web-ui-registration/src/components/LoginPoweredBy.tsx
 - apps/meteor/public/images/manifest.json
-- apps/meteor/app/theme/client/main.css
+- apps/meteor/client/components/message/toolbar/items/DefaultItems.tsx
+- apps/meteor/app/api/server/index.ts
+- packages/i18n/src/locales/en.i18n.json
+- packages/i18n/src/locales/vi-VN.i18n.json
 
 ==============================================================
 
