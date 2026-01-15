@@ -74,11 +74,11 @@ echo "-------------------------------------------------"
 #==========================================
 
 # Tham số đầu vào
-POWERED_COMPANY="Powered by SaiGon GreenTech"
+POWERED_COMPANY="SaiGon GreenTech"
 POWERED_COMPANY_LINK="https://saigongreentech.com"
 CLIENT_NAME="SaiGon GreenTech"
 CLIENT_LINK="https://saigongreentech.com"
-EXTRA_INFO="Hotline: 1900"
+EXTRA_INFO="Hotline: 0903 98 39 59"
 LOGO_PATH="./logo"
 
 #==========================================
