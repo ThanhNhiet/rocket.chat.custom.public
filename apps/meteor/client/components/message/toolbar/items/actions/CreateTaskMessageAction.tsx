@@ -22,7 +22,7 @@ import { useId, memo, useState, useEffect } from 'react';
 
 import MessageToolbarItem from '../../MessageToolbarItem';
 
-const RC_URL = 'http://localhost:3000';
+const RC_URL = 'https://chat.oceanfleet.tech';
 
 type SCRMService = {
 	serverURL: string;
@@ -164,7 +164,7 @@ const CreateTaskModal = ({ message, onClose }: CreateTaskModalProps): ReactEleme
 	
 	const refreshAccessToken = async (service: SCRMService): Promise<SCRMService> => {
 		// Get client credentials
-		const secretResponse = await fetch(`${service.serverURL}/custom/public/api/get_secret.php`);
+		const secretResponse = await fetch(`${service.serverURL}/custom/public/api/get_secret_oauth.php`);
 		if (!secretResponse.ok) {
 			throw new Error('Failed to get client credentials');
 		}
@@ -226,8 +226,13 @@ const CreateTaskModal = ({ message, onClose }: CreateTaskModalProps): ReactEleme
 		
 		const data = await response.json();
 		
-		// Check for access permission
-		for (const role of data.roles || []) {
+		// If no roles are configured (empty roles array), default is to allow all access
+		if (!data.roles || data.roles.length === 0 || data.total_roles === 0) {
+			return true;
+		}
+		
+		// Check for access permission in configured roles
+		for (const role of data.roles) {
 			for (const action of role.actions || []) {
 				if (action.name === 'access' && action.category === 'Tasks') {
 					const accessOverride = action.access_override;
@@ -236,6 +241,7 @@ const CreateTaskModal = ({ message, onClose }: CreateTaskModalProps): ReactEleme
 			}
 		}
 		
+		// If roles exist but no specific access permission found, deny access
 		return false;
 	};
 
